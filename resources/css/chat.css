@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contain {
+  width: 100% !important;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.message-header {
+  width: 100%;
+  height: 5%;
+  background-color: #353638;
+}
+
+.message-header-img {
+  border-radius: 50%;
+  width: 40px;
+  margin-left: 5%;
+  margin-top: 12px;
+  float: left;
+}
+
+.activeago {
+  width: 120px;
+  float: left;
+  margin-top: 5px;
+}
+
+.activeago h4 {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.activeago h6 {
+  font-size: 10px;
+  margin-left: 10px;
+  line-height: 2px;
+  color: #fff;
+}
+
+.header-icon {
+  width: 120px;
+  float: left;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.header-icon .fa {
+  color-adjust: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.chatBox {
+  overflow: auto;
+  /* padding-bottom: 30px; */
+  height: 100%;
+}
+
+.chat {
+  padding: 30px 15px 0 25px;
+}
+
+.chatPage {
+  height: 84%;
+  width: 100%;
+  overflow-y: auto;
+}
+.recievedChat{
+  display: grid;
+  grid-template-columns: 5% 95%;
+  margin:20px;
+
+}
+.recievedChatImg {
+  display: inline-block;
+  width: 20px;
+}
+
+.recievedMessage {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 100%;
+}
+
+.recievedMessageInbox {
+  width: 57%;
+}
+
+.recievedMessageInbox p {
+  background: #efefef none repeat scroll 0 0;
+  border-radius: 10px;
+  color: rgb(33 94 167);
+  font-size: 16px;
+  margin: 0;
+  overflow-wrap: break-word;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+
+.timeStamp {
+  color: #777;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.sentChat {
+  overflow: hidden;
+  margin:20px;
+  display: grid;
+  grid-template-columns: 95% 5%;
+}
+
+.sentMessageInbox p {
+  background: #383636 none repeat scroll 0 0;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  margin: 0;
+  color: #fff;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+
+.sentMessageInbox {
+  float: left;
+  width: 46%;
+  margin-left: 50%;
+}
+
+.sentChatImg {
+  order: 2;
+  display: inline-block;
+  width: 20px;
+}
+
+.chatFooter {
+  position: relative;
+  height: 5%;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* background-color: #007bff; */
+}
+
+.chatFooterInput {
+  height: 100%;
+  display: flex;
+  float: right;
+  /* margin-top: 13px; */
+  /* margin-right: 20px; */
+  outline: none !important;
+  border-radius: 10px;
+  width: 100% !important;
+  background-color: rgb(156, 146, 146);
+}
+
+.ChatFooterInputMessage {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 97%;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+.ChatFooterInputMessageAppend {
+  width: 3%;
+  background-color: rgb(123, 141, 167);
+}
+
+.fas {
+  margin-right: 6px;
+}
+
+.inputText {
+  background: transparent !important;
+  border: none !important;
+}
+
+.inputText .fa {
+  color: #007bff;
+  float: right;
+}
+
+
+/* .chatfooterIcons {
+  float: left;
+  margin-top: 17px;
+  width: 30% !important;
+  margin-left: 22px;
+} */
+
+/* .chatfooterIcons .fa{
+ If I need to insert icons or something SHITENDU MISHRA
+} */
+
+.ChatFooterInputMessage :focus {
+  border-color: none !important ;
+  box-shadow: none !important;
+  border-radius: 20px;
+}

@@ -1,0 +1,225 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(223, 221, 221, 0.849);
+  border-radius: 10px;
+}
+.workstation{
+    height: 100vh;
+    max-height:100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #131212;
+}
+.body{
+    margin-top: 40px;
+    color:#d4d9de;
+    height: 100%;
+    min-height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: nowrap;
+}
+.modal-content{
+    background-color:rgba(22,22,27,0.73);
+    color:red!important;
+  }
+  .modal-header{
+    justify-content:center!important;
+  }
+  #modal-textarea{
+    background-color:rgba(0,0,0,0.76);
+  }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+a.nav-item {
+    position: relative;
+    display: block;
+    padding: .5rem 1.25rem;
+    margin-bottom: -1px;
+    color:rgba(255,255,255,.5);
+    font-weight: 600;
+    text-decoration: none;
+}
+a.nav-item:hover, .nav-item.active {
+  color: rgb(255, 255, 255);
+}
+.dropdown-menu.show{
+    padding: 0;
+    background-color: transparent;
+}
+.dropdown-item{
+    color:white;
+    background-color: rgba(0,0,0,0.38);
+    border:1px solid #ced4da;
+    border-radius: .25rem;
+}
+.dropdown-item:hover{
+    color:white;
+    background-color: rgba(0,0,0,0.38);
+}
+#roomCreate,#roomJoin{
+    background-color: rgba(0,0,0,0.38);
+}
+.sidebar-bg{
+    background: linear-gradient(to right, #000000, #434343,#000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card{
+    background-color: transparent;
+    border: none;
+}
+.card-img-top.dp{
+    width: 60%;
+    border-radius: 50%;
+    margin: auto;
+}
+.page{
+    overflow: auto;
+    padding: 0!important;
+}
+.sticky-top{
+    margin-top:5px;
+}
+.sticky-top .card{
+    background-color: rgba(22,22,27,0.73);
+    border:1px solid #ced4da;
+    border-radius: .25rem;
+}
+.sticky-top .card a{
+    color: white;
+}
+#search{
+    background-color: rgba(22,22,27,0.73);
+}
+.btn-trans{
+    background-color: rgba(22,22,27,0.73);
+    color: rgba(255, 255, 255, 0.774);
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.btn-trans:hover{
+    color: rgb(255, 255, 255);
+    border-color: rgba(93, 93, 201, 0.836);
+}
+.custom-menu {
+    z-index: 1000;
+    position: absolute;
+    background-color: rgba(22,22,27,0.73);
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    min-width: 13vw;
+}
+.fa-circle{
+    color:rgba(87, 156, 87, 0.911);
+    size:1em;
+  }
+a.custom-menu-list {
+    width: 100%;
+    display: flex;
+    color: #fffefe;
+    font-weight: 600;
+    font-size: 1em;
+	border-radius:.25rem;
+    padding: 1px 11px;
+}
+span.card-icon {
+font-size: 2em;
+bottom: .2em;
+color: #ffffff80;
+}
+.file-item{
+cursor: pointer;
+}
+a.custom-menu-list:hover,.file-item:hover,.file-item.active {
+background: #80808024;
+}
+tbody{
+    color: rgba(255, 255, 255, 0.774);
+}
+a.custom-menu-list span.icon{
+    width:1em;
+    margin-right: 5px
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader::before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #1977cc;
+    border-top-color: #d1e6f9;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+#preloader2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #ffffff82;
+  }
+  
+  #preloader2::before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #1977cc;
+    border-top-color: #d1e6f9;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
